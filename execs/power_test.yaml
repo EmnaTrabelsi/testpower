@@ -1,0 +1,18 @@
+metadata:
+  name: Montjoie tests
+  format: "Lava-Test-Shell Test Definition 1.0"
+  description: "Montjoie test"
+  version: 1.0
+install:
+    git-repos:
+    - https://github.com/touilkhouloud/acme-utils.git
+    - https://github.com/baylibre-acme/acme-cli.git
+run:
+    steps:
+      - echo "Power tests"
+      - chmod +x ./power.sh  
+      - ./power.sh
+    
+      
+    
+
